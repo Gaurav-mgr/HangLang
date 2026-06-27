@@ -1,0 +1,62 @@
+.keyboard-container{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  width: 550px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 10px 0 20px 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.164);
+}
+
+.keyboard-container > button{
+  background: #f4f4f4;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.205);
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.keyboard-container > button:hover{
+  background: #f5f5f5;
+  transform: scale(1.06)
+}
+
+.keyboard-container > button.correct{
+  background: #0ecc6a;
+  color: white;
+}
+
+.keyboard-container > button.wrong{
+  background: #fd3434;
+  color: white;
+}
+
+section.keyboard-container > button.lose::before{
+  cursor: none;
+}
+
+@media screen and (max-width: 430px){
+  .keyboard-container{
+    gap: 6px;
+    width: 90%;
+  }
+
+  .keyboard-container > button{
+    width: 42px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 4px;
+  }
+}

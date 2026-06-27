@@ -1,0 +1,41 @@
+.word-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 550px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.letter {
+  background: #272727;
+  border-bottom: 2px solid rgba(185, 185, 185, 0.733);
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.letter.lost {
+  color: #ff4d4fe0;
+  border-bottom: 2px solid #ff4d50e0;
+}
+
+@media screen and (max-width: 430px) {
+  .word-container {
+    width: 90%;
+    gap: 5px;
+    /* background: red; */
+  }
+
+  .letter {
+    width: 49px;
+    height: 49px;
+    font-size: 17px;
+  }
+}
